@@ -1,0 +1,59 @@
+header{
+    max-height: 41.5rem;
+    height:100%;
+
+}
+
+.background-img {
+    background-image: url("https://s3-alpha-sig.figma.com/img/f90e/7bb5/ff2950597c1f7f1fce40bd5b03a3d836?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NcoovoTV~Wfdi4-G-VwXyMWlilk9Sqb~o5PPBlUhNqS4rgxlgD69QOCJZk4bPr4kLZ40eY~zYAy1QX0LNkNsycB0HhLYIdA~bQhj-fXdUWY2G01BbJeHTR6NsWA8kcaxn46hwcxrkdJ0nXUfjOsYxaVWKkCeYWUj79XwQCZIv9m8g4lWhaHfOr3CI2bO1p0gPlJ2XRh6-3ivCDcSUWK2R2rqN0LrafInYWwnXsc~vOc6ye~jXAoByyjDS2mOnPFzKswiME8qfvgMfcYHBkmcAGmuM9OKPuCRswmmoEYPjwWX3JQrJA2wO~CB6pbAaLbm7FuUJlxnfU5YlSE8tjmBFg__");
+    background-position: center;
+    background-size: cover;
+    max-height: 41.5rem;
+    height: 100%;
+}
+
+.rounded-btn {
+    border-radius: 15px;
+}
+
+.recipes-counter{
+    font-family: 'Anton', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.card {
+    max-width: 23.75rem;
+    max-height: 46rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+
+    &-text {
+        font-size:14px;
+
+    }
+    &-title {
+        font-family: 'Anton', sans-serif;
+        font-weight: 400;
+
+    }
+
+    &-img-top {
+    max-width: 23.75rem;
+    max-height: 15.8rem;
+    min-height: 15.8rem;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+    }
+}
+
+.text-limit {
+    max-height: 6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-wrap: nowrap;
+    
+}
