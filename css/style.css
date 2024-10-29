@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   max-height: 41.5rem;
   height: 100%;
@@ -19,14 +20,21 @@ header {
   position: relative;
   width: 100%;
 }
-.dropdown-tags-toggle {
+.dropdown-tags.active .dropdown-menu {
+  display: block; /* Affiche le menu lors de l'état actif */
+}
+
+.dropdown-toggle {
+  border-radius: 15px;
   border: 1px solid grey;
+  background-color: white;
   padding: 8px;
   cursor: pointer;
   width: 100%;
   text-align: left;
 }
-.dropdown-tags-menu {
+
+.dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -36,20 +44,49 @@ header {
   z-index: 2;
   padding: 10px;
 }
-.dropdown-tags-options {
+
+.dropdown-input_group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-search {
+  flex: 1;
+  padding: 8px;
+}
+
+.search-icon-btn {
+  background-color: white;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.search-icon-btni {
+  font-size: 1.2rem;
+}
+
+.dropdown-options {
   max-height: 150px;
   overflow-y: auto;
   margin-top: 8px;
 }
-.dropdown-tags-option {
+
+.dropdown-option {
   padding: 5px;
   cursor: pointer;
 }
-.dropdown-tags-option:hover {
+.dropdown-option:hover {
   background-color: grey;
 }
-.dropdown-tags.active .dropdown-menu {
-  display: block;
+
+.tag {
+  border-radius: 15px;
+  margin-right: 10;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .recipes-counter {
