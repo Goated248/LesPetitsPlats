@@ -15,6 +15,43 @@ header {
   border-radius: 15px;
 }
 
+.dropdown-tags {
+  position: relative;
+  width: 100%;
+}
+.dropdown-tags-toggle {
+  border: 1px solid grey;
+  padding: 8px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+.dropdown-tags-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid grey;
+  z-index: 2;
+  padding: 10px;
+}
+.dropdown-tags-options {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: 8px;
+}
+.dropdown-tags-option {
+  padding: 5px;
+  cursor: pointer;
+}
+.dropdown-tags-option:hover {
+  background-color: grey;
+}
+.dropdown-tags.active .dropdown-menu {
+  display: block;
+}
+
 .recipes-counter {
   font-family: "Anton", sans-serif;
   font-size: 21px;

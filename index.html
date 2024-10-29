@@ -47,29 +47,40 @@
         <section class="container">
             <div class="row py-5 bg-light">
                 <div class="col-2 me-4">
-                    
-                    <input type="search" class="form-control" id="ingredients-search" placeholder="Ingrédients" aria-label="search" list="ingredients-list"> 
-                    <datalist id="ingredients-list">
-
-                    </datalist>
+                    <div class="dropdown-tags">
+                        <button type="button" class="dropdown-toggle" id="ingredients-button">Ingrédients</button>
+                        <div class="dropdown-menu">
+                          <input type="text" id="ingredients-search" class="dropdown-search">
+                          <div class="dropdown-options" id="ingredients-options"></div> 
+                        </div>
+                    </div>
                 </div>
                 <div class="col-2 me-4">
-                    <input type="search" class="form-control" id="devices-search" placeholder="Appareils" aria-label="search" list="devices-list">
-                    <datalist id="devices-list">
-
-                    </datalist> 
+                    <div class="dropdown-tags">
+                        <button type="button" class="dropdown-toggle" id="devices-button">Appareils</button>
+                        <div class="dropdown-menu">
+                          <input type="text" id="devices-search" class="dropdown-search">
+                          <div class="dropdown-options" id="devices-options"></div> 
+                        </div>
+                    </div> 
                 </div>
                 <div class="col-2">
-                    <input type="search" class="form-control" id="ustensils-search" placeholder="Ustensiles" aria-label="search" list="ustensils-list">
-                    <datalist id="ustensils-list">
-
-                    </datalist> 
+                    <div class="dropdown-tags">
+                        <button type="button" class="dropdown-toggle" id="ustensils-button">Ustensiles</button>
+                        <div class="dropdown-menu">
+                          <input type="text" id="ustensils-search" class="dropdown-search">
+                          <div class="dropdown-options" id="ustensils-options"></div> 
+                        </div>
+                    </div>
                 </div>
                 <div class="col text-end recipes-counter fw-bold" id="recipes-counter"></div>
+            </div>
 
+            <div clas="row py-5 bg-light tags-container">
                 
             </div>
         </section>
+
         <section class="container">
             <div class="row" id="recipes-container">
 
@@ -88,6 +99,7 @@
    
 <script src="data/recipes.js"></script> 
 <script src="scripts/algo.js"></script>
+<script src="scripts/tags.js"></script>
 <script src="scripts/index.js"></script> 
 </body>
 

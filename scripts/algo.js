@@ -52,22 +52,3 @@ function recherche(query){
      }
 }
 
-//rempli liste de tags
-
-function fillDataList(dataListId , options){
-    const dataList = document.getElementById(dataListId)
-    dataList.innerHTML = ""
-    options.forEach(option => {
-        const optionElement = document.createElement('option')
-        optionElement.value = option
-        dataList.appendChild(optionElement)
-    })
-    
-}
-
-document.addEventListener("DOMContentLoaded", ()=> {
-fillDataList('ingredients-list', uniqueIngredients)
-fillDataList('devices-list' , uniqueDevices)
-fillDataList('ustensils-list', uniqueUstensils)
-updateRecipeCounter(recipes.length)
-})
