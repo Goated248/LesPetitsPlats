@@ -2,17 +2,12 @@
 
 const nomRecette = recipes.map(recipe => recipe.name)
 
-const ingredients = recipes.flatMap(recipe => recipe.ingredients.map(ing => ing.ingredient));
+const ingredients = recipes.flatMap(recipe => recipe.ingredients.map(ing => ing.ingredient))
 
 const ustensiles = recipes.flatMap(recipe =>recipe.ustensils)
 
 const appareils = recipes.flatMap(recipe => recipe.appliance)
 
-
-//structuration des liste sans doublons
-const uniqueIngredients = [...new Set(recipes.flatMap(recipe => recipe.ingredients.map(ing => ing.ingredient)))];
-const uniqueDevices = [...new Set(recipes.flatMap(recipe => recipe.appliance))];
-const uniqueUstensils = [...new Set(recipes.flatMap(recipe => recipe.ustensils))];
 
 
 //empeche rechargement de la page

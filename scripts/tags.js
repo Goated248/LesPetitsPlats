@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 })
 
+//structuration des liste sans doublons
+const uniqueIngredients = [...new Set(recipes.flatMap(recipe => recipe.ingredients.map(ing => ing.ingredient)))]
+const uniqueDevices = [...new Set(recipes.flatMap(recipe => recipe.appliance))]
+const uniqueUstensils = [...new Set(recipes.flatMap(recipe => recipe.ustensils))]
+
 function setupDropdown(buttonId, optionsContainerId, options, searchInputId) {
     const button = document.getElementById(buttonId)
     const dropdown = button.closest('.dropdown-tags')
@@ -19,6 +24,20 @@ function setupDropdown(buttonId, optionsContainerId, options, searchInputId) {
     button.addEventListener('click', (e)=> {
         dropdown.classList.toggle('active')
         e.stopPropagation()
+        if (dropdown.classList.contains('active')) {
+            button.style.borderBottom = 'none'
+            button.style.borderBottomLeftRadius = '0px'
+            button.style.borderBottomRightRadius = '0px'
+
+            button.querySelector('i').classList.remove('fa-chevron-down')
+            button.querySelector('i').classList.add('fa-chevron-up')
+        } else {
+            button.style.borderBottom = '' // Réinitialise à la valeur par défaut
+            button.style.borderBottomLeftRadius = ''
+            button.style.borderBottomRightRadius = ''
+            button.querySelector('i').classList.remove('fa-chevron-up')
+            button.querySelector('i').classList.add('fa-chevron-down')
+        }
     })
     //filtre les options en fonction de l'input
     searchInput.addEventListener('input', ()=> {

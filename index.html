@@ -48,13 +48,13 @@
     <main class="bg-light">
         <section class="container">
             <div class="row py-5 bg-light">
-                <div class="col-2 me-4">
+                <div class="col-2 me-5">
                     <div class="dropdown-tags">
-                        <button type="button" class="dropdown-toggle" id="ingredients-button">Ingrédients</button>
+                        <button type="button" class="dropdown-toggle" id="ingredients-button">Ingrédients<i class="fa-solid fa-chevron-down"></i></button>
                         <div class="dropdown-menu">
                         <div class="dropdown-input_group">
                           <input type="text" id="ingredients-search" class="dropdown-search">
-                            <button type="button" class="btn"><i class="bi bi-search text-secondary"></i></button>
+                            <button type="button" class="dropdown-btn"><i class="bi bi-search text-secondary"></i></button>
                         </div>
                           <div class="dropdown-options" id="ingredients-options"></div> 
                         </div>
@@ -62,19 +62,25 @@
                 </div>
                 <div class="col-2 me-4">
                     <div class="dropdown-tags">
-                        <button type="button" class="dropdown-toggle" id="devices-button">Appareils</button>
+                        <button type="button" class="dropdown-toggle" id="devices-button">Appareils<i class="fa-solid fa-chevron-down"></i></button>
                         <div class="dropdown-menu">
-                          <input type="text" id="devices-search" class="dropdown-search">
+                            <div class="dropdown-input_group">
+                                <input type="text" id="devices-search" class="dropdown-search">
+                                  <button type="button" class="dropdown-btn"><i class="bi bi-search text-secondary"></i></button>
+                              </div>
                           <div class="dropdown-options" id="devices-options"></div> 
                         </div>
                     </div> 
                 </div>
                 <div class="col-2">
                     <div class="dropdown-tags">
-                        <button type="button" class="dropdown-toggle" id="ustensils-button">Ustensiles</button>
+                        <button type="button" class="dropdown-toggle" id="ustensils-button">Ustensiles<i class="fa-solid fa-chevron-down"></i></button>
                         <div class="dropdown-menu">
-                          <input type="text" id="ustensils-search" class="dropdown-search">
-                          <div class="dropdown-options" id="ustensils-options"></div> 
+                            <div class="dropdown-input_group">
+                                <input type="text" id="ustensils-search" class="dropdown-search">
+                                  <button type="button" class="dropdown-btn"><i class="bi bi-search text-secondary"></i></button>
+                              </div>
+                              <div class="dropdown-options" id="ustensils-options"></div> 
                         </div>
                     </div>
                 </div>
